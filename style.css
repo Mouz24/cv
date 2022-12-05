@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+}
+
+.skillsList {
+    text-align: center;
+}
+
+p {
+    font-size: large;
+}
+
+ol {
+    display: inline-block;
+    text-align: left;
+    list-style: disc;
+}
+
+.aboutMe {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
