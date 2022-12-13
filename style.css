@@ -33,6 +33,25 @@ div {
     display: block;
 }
 
+section {
+    display: block;
+}
+
+.section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #672f2f;
+}
+
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 15px solid #d7d1c9;
+}
+
 @media (max-width: 768px){
     .section-profile {
         flex-direction: column;
@@ -64,31 +83,9 @@ ul {
 
 li {
     display: list-item;
-    text-align: -webkit-match-parent;
+    text-align: match-parent;
 }
 
-/*.skillsList {
-    text-align: center;
-}
-
-p {
-    font-size: large;
-}
-
-ol {
-    display: inline-block;
-    text-align: left;
-    list-style: disc;
-}
-
-.aboutMe {
-    text-align: center;
-}
-
-section {
-    text-align: center;
-}
-*/
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -100,6 +97,8 @@ section {
     margin: 0 auto;
     min-height: 50px;
 }
+
+
 
 .section-profile-title {
     display: flex;
@@ -206,7 +205,7 @@ html {
     position: relative;
     padding: 0 20px;
     line-height: 50px;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -248,13 +247,6 @@ html {
 .main-container {
     display: flex;
     flex-wrap: wrap;
-}
-
-.section {
-    width: calc(50% - 20px);
-    padding: 10px;
-    padding-bottom: 35px;
-    border-bottom: 1px solid #672f2f;
 }
 
 .section-title {
@@ -304,17 +296,63 @@ html {
 }
 
 .contacts-item:nth-child(1):before {
+    top: 4px;
+    left: 0px;
+    width: 19px;
+    height: 19px;
     background-image: url(assets/img/location.svg);
 }
 
 .contacts-item:nth-child(2):before {
+    top: 3px;
+    left: 0px;
+    width: 21px;
+    height: 21px;
     background-image: url(assets/img/email.svg);
 }
 
 .contacts-item:nth-child(3):before {
+    top: 4px;
+    left: 0px;
+    width: 19px;
+    height: 19px;
     background-image: url(assets/img/github.svg);
 }
 
 .contacts-item:nth-child(4):before {
+    top: 3px;
+    left: 0px;
+    width: 21px;
+    height: 21px;
     background-image: url(assets/img/telegram.svg);
+}
+
+@media (max-width: 768px) {
+    .section-education {
+        border-bottom: 1px solid #672f2f;
+    }
+}
+
+.section-education, .section-english {
+    border-bottom: 0;
+}
+
+.footer {
+    background-color: #829985;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
 }
