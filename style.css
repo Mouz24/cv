@@ -219,12 +219,13 @@ html {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
+
 .nav-link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.section-item {
+.section-item, .section-education-item {
     position: relative;
     margin: 0;
     margin-bottom: 10px;
@@ -296,8 +297,9 @@ html {
 .contacts-item:nth-child(1):before {
     top: 4px;
     left: 0px;
-    width: 19px;
-    height: 19px;
+    width: 21px;
+    height: 21px;
+    background-size: 21px;
     background-image: url(assets/img/location.svg);
 }
 
@@ -306,14 +308,16 @@ html {
     left: 0px;
     width: 21px;
     height: 21px;
+    background-size: 21px;
     background-image: url(assets/img/email.svg);
 }
 
 .contacts-item:nth-child(3):before {
     top: 4px;
     left: 0px;
-    width: 19px;
-    height: 19px;
+    width: 21px;
+    height: 21px;
+    background-size: 21px;
     background-image: url(assets/img/github.svg);
 }
 
@@ -322,6 +326,7 @@ html {
     left: 0px;
     width: 21px;
     height: 21px;
+    background-size: 21px;
     background-image: url(assets/img/telegram.svg);
 }
 
@@ -329,6 +334,17 @@ html {
     .section-education {
         border-bottom: 1px solid #672f2f;
     }
+}
+
+.section-education-item:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-size: 21px 21px;
+    background-image: url(assets/img/bsuir-icon.jpg);
 }
 
 .section-education, .section-english {
