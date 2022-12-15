@@ -46,21 +46,6 @@ header{
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .nav.collapsed {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 2;
-        display: flex;
-        width: 100%;
-        height: 100vh;
-        min-height: 525px;
-        flex-direction: column;
-        background-color: #829985;
-    }
-}
-
 .toggle {
     display: none;
     flex-direction: column;
@@ -282,15 +267,12 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width:320px) {
     .nav-list.collapsed {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        padding-top: 100px;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
     }
 }
 
