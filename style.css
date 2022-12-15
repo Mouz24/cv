@@ -52,7 +52,7 @@ header{
         left: 0;
         top: 0;
         z-index: 2;
-        display: block;
+        display: flex;
         width: 100%;
         height: 100vh;
         min-height: 525px;
@@ -284,13 +284,11 @@ h3 {
 
 @media (max-width: 480px) {
     .nav-list.collapsed {
-        display: block;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        padding-top: 100px;
+        max-width: 300px;
+        margin: auto;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
     }
 }
 
