@@ -21,6 +21,70 @@ header{
     display: block;
 }
 
+.nav {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .nav.collapsed {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        min-height: 525px;
+        flex-direction: column;
+        background-color: #829985;
+    }
+}
+
+.toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    user-select: none;
+    z-index: 15;
+}
+
+.toggle div {
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    margin: 3px 0;
+    z-index: 15;
+}
+
+.toggle.collapsed .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle.collapsed .line2 {
+    opacity: 0;
+}
+
+.toggle.collapsed .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+@media (max-width: 768px) {
+    .toggle {
+        display: flex;
+    }
+}
+
 .main {
     margin-bottom: auto;
 }
@@ -31,6 +95,18 @@ main {
 
 div {
     display: block;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 20px;
+    }
 }
 
 section {
@@ -65,12 +141,6 @@ section {
     }
 }
 
-@media (max-width: 1440px) {
-    .container {
-        padding: 0 20px;
-    }
-}
-
 ul {
     display: block;
     list-style-type: disc;
@@ -90,12 +160,6 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    min-height: 50px;
 }
 
 .section-profile-title {
@@ -188,6 +252,18 @@ h3 {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+}
+
+@media (max-width: 768px){
+    .nav-list.collapsed {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding-top: 50px;
+    }
 }
 
 * {
