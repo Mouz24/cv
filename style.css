@@ -129,8 +129,8 @@ section {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 50px 30px 35px;
-    border-bottom: 15px solid #d7d1c9;
+    padding: 0px 30px 5px;
+    border-bottom: 5px solid #d7d1c9;
 }
 
 @media (max-width: 768px){
@@ -181,10 +181,10 @@ li {
     padding: 0;
     margin-bottom: 20px;
     color: #4d2323;
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: 10px;
-    line-height: 50px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    line-height: 25px;
     word-spacing: 3px;
 }
 
@@ -200,9 +200,9 @@ li {
 }
 
 .section-subtitle {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #5c5c5c;
-    line-height: 50px;
+    line-height: 20px;
     font-weight: 300;
     letter-spacing: 2px;
 }
@@ -317,6 +317,14 @@ html {
 }
 
 .section-item, .section-education-item {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.section-jobs-item {
     position: relative;
     margin: 0;
     margin-bottom: 10px;
@@ -443,6 +451,49 @@ html {
     height: 21px;
     background-size: 21px 21px;
     background-image: url(assets/img/bsuir-icon.jpg);
+}
+
+.section-jobs-item:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-size: 21px 21px;
+    background-image: url(assets/img/itransition_logo.jpg);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+.job-header strong {
+    font-size: 1.2em;
+}
+
+.job-period {
+    font-size: 1em;
+    font-weight: normal;
+    color: #555;
+}
+
+.job-location {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.job-description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
 }
 
 .section-education, .section-english {
